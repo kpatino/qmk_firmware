@@ -1,30 +1,19 @@
-/* Copyright 2021 Gigahawk
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+// Copyright 2021 Gigahawk
+// Copyright 2023 Kevin Patino
+// SPDX-License-Identifier: GPL-2.0-or-later
 
 #pragma once
 
 #include "config_common.h"
 
-#define DRIVER_1_LED_TOTAL 66
-#define DRIVER_2_LED_TOTAL 32
-#define DRIVER_LED_TOTAL (DRIVER_1_LED_TOTAL + DRIVER_2_LED_TOTAL)
+#define USB_POLLING_INTERVAL_MS 1
 
-#define RGB_DISABLE_WHEN_USB_SUSPENDED
-#define RGBLIGHT_DEFAULT_MODE RGBLIGHT_MODE_STATIC_LIGHT
-#define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_SOLID_COLOR
+#define FORCE_NKRO
+
+#define RGB_MATRIX_TIMEOUT 900000 // Turn off RGB after 15 minutes
+#define RGB_DISABLE_WHEN_USB_SUSPENDED // Turn off effects when suspended
+#define RGB_MATRIX_DEFAULT_MODE RGB_MATRIX_SOLID_COLOR // Set solid color as default rgb mode
+#define RGB_MATRIX_DEFAULT_VAL RGB_MATRIX_MAXIMUM_BRIGHTNESS // Sets the default brightness value, if none has been set
 
 /* Removed RGB effects I don't like */
 #undef ENABLE_RGB_MATRIX_BAND_SAT
@@ -49,8 +38,3 @@
 #undef ENABLE_RGB_MATRIX_PIXEL_RAIN
 #undef ENABLE_RGB_MATRIX_PIXEL_FLOW
 #undef ENABLE_RGB_MATRIX_PIXEL_FRACTAL
-
-#define USB_POLLING_INTERVAL_MS 1
-
-/* Force NKRO on boot up regardless of the setting saved in the EEPROM (uncomment to enable it) */
-#define FORCE_NKRO
