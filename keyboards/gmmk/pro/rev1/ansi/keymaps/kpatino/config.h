@@ -4,8 +4,6 @@
 
 #pragma once
 
-#include "config_common.h"
-
 #define USB_POLLING_INTERVAL_MS 1
 
 #define FORCE_NKRO
