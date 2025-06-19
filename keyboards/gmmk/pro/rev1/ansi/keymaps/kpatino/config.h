@@ -11,7 +11,7 @@
 #endif
 #define DEBOUNCE 8
 
-#define FORCE_NKRO
+#define NKRO_DEFAULT_ON true
 
 #define RGB_MATRIX_TIMEOUT 300000 // Turn off RGB after 5 minutes
 #define RGB_DISABLE_WHEN_USB_SUSPENDED // Turn off effects when suspended
