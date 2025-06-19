@@ -13,7 +13,7 @@
 
 #define FORCE_NKRO
 
-#define RGB_MATRIX_TIMEOUT 900000 // Turn off RGB after 15 minutes
+#define RGB_MATRIX_TIMEOUT 300000 // Turn off RGB after 5 minutes
 #define RGB_DISABLE_WHEN_USB_SUSPENDED // Turn off effects when suspended
 #define RGB_MATRIX_DEFAULT_MODE RGB_MATRIX_SOLID_COLOR // Set solid color as default rgb mode
 #define RGB_MATRIX_DEFAULT_VAL RGB_MATRIX_MAXIMUM_BRIGHTNESS // Sets the default brightness value, if none has been set
