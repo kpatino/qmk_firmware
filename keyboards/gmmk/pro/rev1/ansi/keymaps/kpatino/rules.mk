@@ -1,4 +1,7 @@
-VIA_ENABLE = yes
+CONSOLE_ENABLE = no
+COMMAND_ENABLE = no
 DEBOUNCE_TYPE = asym_eager_defer_pk
+LTO_ENABLE = yes
 MOUSEKEY_ENABLE = no
 TAP_DANCE_ENABLE = yes
+VIA_ENABLE = yes
