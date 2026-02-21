@@ -6,11 +6,6 @@
 
 #define USB_POLLING_INTERVAL_MS 1
 
-#ifdef DEBOUNCE
-    #undef DEBOUNCE
-#endif
-#define DEBOUNCE 8
-
 #define NKRO_DEFAULT_ON true
 
 #define RGB_MATRIX_TIMEOUT 300000 // Turn off RGB after 5 minutes
